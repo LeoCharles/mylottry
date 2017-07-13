@@ -1,0 +1,398 @@
+/* 抽奖页面样式 */
+
+html {
+    font-size: 62.5%; /*10px*/
+}
+
+body {
+    font-family: "Microsoft Yahei";
+    background-color: #ff524c;
+}
+
+/*活动标题*/
+.activity {
+    width: 100%;
+    padding-top: 30%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: 100%;
+}
+
+.activity .title {
+    width: 70%;
+    margin: 0 auto 6%;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.activity .time {
+    width: 70%;
+    height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #ff5244;
+    background-color: #ffec02;
+    border-radius: 1rem;
+}
+
+.activity .chance {
+    overflow: hidden;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 3rem auto;
+    color: #fff;
+}
+
+.activity .chance span {
+    padding: 0 .5rem;
+    color: #ffec02;
+}
+
+/*转盘抽奖*/
+.turntable {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 2rem auto;
+}
+
+.turntable img {
+    z-index: 3;
+    display: block;
+    width: 100%;
+}
+
+.plate-btn {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 99;
+    outline-style: none;
+    background: url(../img/jiantou.png) no-repeat;
+    background-size: 100%;
+}
+
+.slide-up {
+    width: 3.5rem;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.share-btn {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    background-color: #ffe31a;
+    color: #ff5244;
+    border-radius: 1.2rem;
+}
+
+.my-prize {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #ffde1c;
+}
+
+/*获奖名单*/
+.prize-list {
+    position: relative;
+    width: 70%;
+    margin: 3rem auto;
+    padding: 5rem 2rem 2rem;
+    border: .02rem dashed #ffc031;
+    background: #ff6b63;
+}
+
+.prize-list .prize-title {
+    position: absolute;
+    top: 10%;
+    left: -8%;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #ff5244;
+    background: url('../img/guzbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.prize-list .prize-info span {
+    color: #fff700;
+}
+
+.prize-list span {
+    display: inline-block;
+    width: 50%;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.prize-list .prize-winner {
+    height: 9rem;
+    overflow: hidden;
+}
+
+/*活动规则*/
+.rule-list {
+    position: relative;
+    width: 70%;
+    margin: 3rem auto;
+    padding: 5rem 2rem 2rem;
+    border: .02rem dashed #ffc031;
+    background: #ff6b63;
+}
+
+.rule-list .rule-title {
+    position: absolute;
+    top: 2rem;
+    left: -8%;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    color: #ff5244;
+    background: url('../img/guzbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.rule-list p {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: justify;
+}
+
+/*弹框遮罩*/
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+/*中奖弹框*/
+.prize-diolog {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    z-index: 10000;
+    background: url('../img/diologbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.prize-diolog h3 {
+    margin: 10% auto;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.prize-diolog .prize {
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    margin: 18% auto 0;
+    line-height: 12rem;
+    text-align: center;
+    color: #ff5244;
+    font-size: 1.8rem;
+    background-color: #fde503;
+    border-radius: 100%;
+}
+
+.prize-diolog p {
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+}
+
+.prize-diolog .prize-btn {
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    margin: 10% auto;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #ff5244;
+    background-color: #fde503;
+    border-radius: 2rem;
+}
+
+/*领奖弹框*/
+.getprize-diolog {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 30%;
+    z-index: 10000;
+    background: #ff423a;
+    border-radius: 2rem;
+}
+
+.getprize-diolog p {
+    margin: 10% auto;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #fff;
+}
+
+.getprize-diolog input {
+    width: 78%;
+    height: 3rem;
+    padding-left: 2%;
+    margin: 0 10% 5%;
+    background-color: #fff;
+}
+
+.getprize-diolog .getprize-btn {
+    display: inline-block;
+    width: 20%;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #ff5244;
+    background-color: #fde503;
+    border-radius: .5rem;
+    margin-left: 20%;
+}
+
+/* 分享弹框 */
+.share-diolog {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 45%;
+    z-index: 10000;
+    background: url('../img/diologbg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.share-diolog h3 {
+    margin: 8% auto 5%;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.share-diolog .share-img {
+    position: relative;
+}
+
+.share-diolog .share-blog, .share-diolog .share-wechat {
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+}
+
+.share-diolog .share-blog {
+    position: absolute;
+    left: 20%;
+}
+
+.share-diolog .share-wechat {
+    position: absolute;
+    right: 20%;
+
+}
+
+.share-diolog p {
+    margin: 35% auto 0;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 5%;
+    color: #fff;
+}
+
+.share-diolog .cancel-btn {
+    width: 30%;
+    height: 3rem;
+    display: block;
+    margin: 5% auto;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #ff5244;
+    background-color: #fde503;
+    border-radius: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

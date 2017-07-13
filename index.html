@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title>微微App抽奖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/lucky.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script src="js/lucky.js"></script>
+</head>
+<body>
+    <!-- 转盘区域 -->
+        <div class="activity">
+        <div>
+            <h2 class="title">微微App大抽奖活动<br/>iPhone7等你来拿</h2>
+            <p class="time">活动时间：7月15日-7月30日</p>
+            <p class="chance">你还有<span id="num">3</span>次抽奖机会</p>
+        </div>
+        <div class="turntable">
+            <!-- 转盘背景 -->
+            <img src="img/zhuanpan.png" alt="开始转盘"/>
+            <!-- 开始按钮 -->
+            <a href="javascript:" class="plate-btn" id="plateBtn"><img src="img/lijichoujiang.png" alt="立即抽奖"/></a>
+
+        </div>
+        <div class="slide-up"><img src="img/zhiyin.png" alt="向上滑"/></div>
+        <a href="javascript:" class="share-btn" id="shareBtn">分享再抽一次</a>
+        <a href="javascript:" class="my-prize" id="myPrize">我的奖品</a>
+    </div>
+
+    <!--获奖名单 -->
+    <div class="prize-list">
+        <h4 class="prize-title">获奖名单</h4>
+        <p class="prize-info"><span>手机号</span><span>奖品</span></p>
+        <div class="prize-winner" id="winnerList">
+            <ul>
+                <li><span>155******78</span><span>现金5元</span></li>
+                <li><span>134******93</span><span>现金5元</span></li>
+                <li><span>188******43</span><span>现金10元</span></li>
+                <li><span>123******50</span><span>现金5元</span></li>
+                <li><span>167******21</span><span>现金5元</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 活动规则 -->
+    <div class="rule-list">
+        <h4 class="rule-title">活动规则</h4>
+        <p>1.  本活动仅适用于下载1.5版本及以上版本的用户参与；</p>
+        <p>2.  抽奖资格：在活动期间每日登录微微App即可参与抽奖，每个用户每天最多三次抽奖机会；</p>
+        <p>3.  分享至微博或朋友圈可增加抽奖次数一次；</p>
+        <p>4.  现金红包采用支付宝转账形式发放，中奖现金将在活动结束后7个工作日内下发；</p>
+        <p>5.  实物奖品请在我的奖品内登记收货地址，活动结束后7个工作日内下发；</p>
+        <p>6.  抽奖过程中若遇到手机网络异常情况，请以“我的奖品”中显示的奖品为准；</p>
+        <p>7.  本活动最终解释权归微微App所有；</p>
+        <p>8.  客服：请微博联系@微微App</p>
+    </div>
+
+    <!-- 弹框遮罩 -->
+    <div class="mask" id="mask"></div>
+
+    <!-- 中奖弹框 -->
+    <div class="prize-diolog" id="prizeDiolog">
+        <h3>恭喜中奖啦</h3>
+        <span class="prize" id="prize">获得10元现金</span>
+        <p>颜值高果然不一样呀~</p>
+        <a href="javascript:" class="prize-btn" id="prizeBtn">去领奖</a>
+    </div>
+    <div class="prize-diolog" id="noprizeDiolog">
+        <h3>很遗憾</h3>
+        <span class="prize">没抽到</span>
+        <p>送你一个么么哒~</p>
+        <a href="javascript:" class="prize-btn" id="prizeCancel">朕知道了</a>
+    </div>
+
+    <!-- 领奖弹框 -->
+    <div class="getprize-diolog" id="getprizeDiolog">
+        <p>领钱啦，请填写支付宝账号，坐等收红包~</p>
+        <input type="text" value="请输入支付宝账号">
+        <div class="pay-btn">
+            <a href="javascript:" class="getprize-btn" id="surebtn">确定</a>
+            <a href="javascript:" class="getprize-btn" id="abandon">不要啦</a>
+        </div>
+    </div>
+
+    <!-- 分享弹框 -->
+    <div class="share-diolog" id="shareDiolog">
+        <h3>分享到</h3>
+        <div class="share-img">
+            <a class="share-blog"><img src="img/wb.png"></a>
+            <a class="share-wechat"><img src="img/wx.png"></a>
+        </div>
+        <p>每天分享到微博和朋友圈，分别可以增加一次抽奖机会噢~</p>
+        <a class="cancel-btn" id="shareCancel">取消</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

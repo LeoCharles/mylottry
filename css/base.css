@@ -1,0 +1,23 @@
+/* reset */
+body,div,table,tr,td,th,h1,h2,h3,h4,h5,h6,form,input,button,label,select,textarea,p,u,i,em,ul,ol,li,dl,dd,dt,img,article,aside,details,figcaption,figure,footer,header,menu,nav,section{ margin:0; padding:0;}
+img{ border:0 none; vertical-align:middle;width:100%;}
+li{ list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;font-weight:normal}
+em,i,dfn{ font-style:normal;}
+table{ border-collapse:collapse; border-spacing:0;width:100%;}
+a, input, select, textarea, area, button{ outline:none; font-family:inherit; font-size:inherit; border:none; background:none; color:inherit;}
+a{ text-decoration:none;}
+a:hover{text-decoration:none;}
+textarea{ overflow:auto; resize:none;}
+input[type="button"], input[type="submit"], input[type="reset"]{ cursor:pointer;-webkit-appearance: none;}
+
+html,body{ overflow-x:hidden;}
+html{ -webkit-tap-highlight-color: transparent;}
+body{font:400 14px/1 microsoft yahei, Tohoma, Arial; color:#999; text-align:left; background:#fff;}
+.fl{float:left;}
+.fr{float: right;}
+.clearfix{zoom:1;}
+section{
+    padding: 15px;
+    overflow: hidden;
+}
