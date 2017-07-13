@@ -1,3 +1,3 @@
 ### 抽奖
 
-[demo](https://leocharles.github.io/mylottery/)
+[demo](https://leocharles.github.io/mylottry/)
